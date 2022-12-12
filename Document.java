@@ -27,10 +27,10 @@ public class Document implements Iterable<String>
 
 
     /**
-     * purpose: initialize a Document object
-     * input: String pathString, the path to the document
-     * result: the initialized Document
-     * expected time complexity: O(n), where n is the number of words in the file
+     * PURPOSE: initialize a Document object;
+     * INPUT: String pathString, the path to the document;
+     * RESULT: the initialized Document;
+     * EXPECTED TIME COMPLEXITY: O(n), where n is the number of words in the file;
      */
     public Document(String pathString)
     {
@@ -54,11 +54,11 @@ public class Document implements Iterable<String>
 
 
     /**
-     * purpose: iterate through the contents of the document and 
-     * create a set of strings that contains the individual words in the document 
-     * input: none
-     * result: a set of strings is returned
-     * expected time complexity: O(n), where n is the number of words in the document
+     * PURPOSE: iterate through the contents of the document and 
+     * create a set of strings that contains the individual words in the document; 
+     * INPUT: none;
+     * RESULT: a set of strings is returned;
+     * EXPECTED TIME COMPLEXITY: O(n), where n is the number of words in the document;
      */
     public Set<String> createSet()
     {
@@ -72,10 +72,10 @@ public class Document implements Iterable<String>
 
 
     /** 
-     * purpose: iterate through the contents of the document
-     * input: none
-     * result: a String iterator is created
-     * expected time complexity: O(n), where n is the number of words in the document
+     * PURPOSE: iterate through the contents of the document;
+     * INPUT: none;
+     * RESULT: a String iterator is created;
+     * EXPECTED TIME COMPLEXITY: O(n), where n is the number of words in the document;
      */
     public Iterator<String> iterator()
     {
@@ -84,10 +84,10 @@ public class Document implements Iterable<String>
 
 
     /**
-     * purpose: display the document's file name 
-     * input: none
-     * result: the document's file name is written to stdout
-     * expected time complexity: O(1) 
+     * PURPOSE: display the document's file name;
+     * INPUT: none;
+     * RESULT: the document's file name is written to stdout;
+     * EXPECTED TIME COMPLEXITY: O(1);
      */
     public void displayFileName()
     {
@@ -96,10 +96,10 @@ public class Document implements Iterable<String>
 
 
     /**
-     * purpose: display the document's contents
-     * input: none
-     * result: the document's contents in original format written to stdout
-     * expected time complexity: O(1)
+     * PURPOSE: display the document's contents;
+     * INPUT: none;
+     * RESULT: the document's contents in original format written to stdout;
+     * EXPECTED TIME COMPLEXITY: O(1);
      */
     public void displayContents()
     {
