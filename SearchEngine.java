@@ -28,11 +28,11 @@ public class SearchEngine
 
 
     /**
-     * purpose: initialize the SearchEngine
-     * input: Boolean contents flag, the flag to turn on/off displaying contents
-     * input: String stoplistPath, the path to the stoplist file
-     * result: the initialized SearchEngine
-     * expected time complexity: O(1)
+     * PURPOSE: initialize the SearchEngine;
+     * INPUT: Boolean contents flag, the flag to turn on/off displaying contents;
+     * INPUT: String stoplistPath, the path to the stoplist file;
+     * RESULT: the initialized SearchEngine;
+     * EXPECTED TIME COMPLEXITY: O(1);
      */
     public SearchEngine(Boolean contentsFlag, String stoplistPath)
     {
@@ -43,10 +43,10 @@ public class SearchEngine
 
 
     /**
-     * purpose: process a query made up of a single word
-     * input: String query, the word to be processed
-     * result: the Set<Document> value corresponding to the query is returned
-     * expected time complexity: O(1), HashMap 'get()' is usually constant
+     * PURPOSE: process a query made up of a single word;
+     * INPUT: String query, the word to be processed;
+     * RESULT: the Set<Document> value corresponding to the query is returned;
+     * EXPECTED TIME COMPLEXITY: O(1), HashMap 'get()' is usually constant;
      */
     public Set<Document> processSingleWordQuery(String query)
     {
@@ -65,11 +65,11 @@ public class SearchEngine
 
 
     /**
-     * purpose: process a query made up of multiple words
-     * input: Set<String> query, the set of words in the query
-     * result: the Set<Document> value corresponding to the intersection
-     * of the query words is returned
-     * expected time complexity: O(n)
+     * PURPOSE: process a query made up of multiple words;
+     * INPUT: Set<String> query, the set of words in the query;
+     * RESULT: the Set<Document> value corresponding to the intersection
+     * of the query words is returned;
+     * EXPECTED TIME COMPLEXITY: O(n);
      */
     public Set<Document> processMultiWordQuery(Set<String> query)
     {
@@ -88,10 +88,10 @@ public class SearchEngine
 
 
     /**
-     * purpose: add a document and its words to the inverted index
-     * input: Document doc, the document to be added
-     * result: the inverted index is updated
-     * expected time complexity: O(n)
+     * PURPOSE: add a document and its words to the inverted index;
+     * INPUT: Document doc, the document to be added;
+     * RESULT: the inverted index is updated;
+     * EXPECTED TIME COMPLEXITY: O(n);
      */
     public void addDocument(Document doc)
     {
@@ -115,10 +115,10 @@ public class SearchEngine
 
 
     /** 
-     * purpose: make a set of words not include any stopwords
-     * input: Set<String> documentWords, the set of words that needs to be cleaned
-     * result: a set that contains no stopwords
-     * expected time complexity: O(n)
+     * PURPOSE: make a set of words not include any stopwords;
+     * INPUT: Set<String> documentWords, the set of words that needs to be cleaned;
+     * RESULT: a set that contains no stopwords;
+     * EXPECTED TIME COMPLEXITY: O(n);
      */
     public Set<String> makeClean(Set<String> documentWords)
     {
@@ -137,10 +137,10 @@ public class SearchEngine
 
 
     /**
-     * purpose: make a single word clean, mostly used for words with apostrophes or other punctuation
-     * input: String word, the word that needs to be cleaned
-     * result: a word that does not include punctuation or stopwords
-     * expected time complexity: O(n)
+     * PURPOSE: make a single word clean, mostly used for words with apostrophes or other punctuation;
+     * INPUT: String word, the word that needs to be cleaned;
+     * RESULT: a word that does not include punctuation or stopwords;
+     * EXPECTED TIME COMPLEXITY: O(n);
      */
     public String makeSingleWordClean(String word)
     {
@@ -160,11 +160,11 @@ public class SearchEngine
 
 
     /**
-     * purpose: display a set of documents' filenames,
-     * and if flag is true, the contents
-     * input: Set<Documet> docSet, the set of documents to parse through
-     * result: the documents' filenames (and contents) are displayed to stdout
-     * expected time complexity: O(n)
+     * PURPOSE: display a set of documents' filenames,
+     * and if flag is true, the contents;
+     * INPUT: Set<Documet> docSet, the set of documents to parse through;
+     * RESULT: the documents' filenames (and contents) are displayed to stdout;
+     * EXPECTED TIME COMPLEXITY: O(n);
      */
     public void display(Set<Document> docSet)
     {
@@ -185,10 +185,10 @@ public class SearchEngine
 
 
     /** 
-     * purpose: display all pairs in the inverted index
-     * input: none
-     * result: the HashMap's key, value pairs are displayed to stdout
-     * expected time complexity: O(n^2)
+     * PURPOSE: display all pairs in the inverted index;
+     * INPUT: none;
+     * RESULT: the HashMap's key, value pairs are displayed to stdout;
+     * EXPECTED TIME COMPLEXITY: O(n^2);
      */
     public void displayAll()
     {
