@@ -27,10 +27,10 @@ public class StopList implements Iterable<String>
 
 
     /** 
-     * purpose: initialize the StopList
-     * input: String pathString, the path to the file
-     * result: the initialized StopList object
-     * expected time complexity: O(n), where n is the number of words in the file
+     * PURPOSE: initialize the StopList;
+     * INPUT: String pathString, the path to the file;
+     * RESULT: the initialized StopList object;
+     * EXPECTED TIME COMPLEXITY: O(n), where n is the number of words in the file;
      */
     public StopList(String pathString)
     {
@@ -56,10 +56,10 @@ public class StopList implements Iterable<String>
 
 
     /** 
-     * purpose: iterate through the contents of the document
-     * input: none
-     * result: a String iterator is created
-     * expected time complexity: O(n), where n is the number of words in the file
+     * PURPOSE: iterate through the contents of the document;
+     * INPUT: none;
+     * RESULT: a String iterator is created;
+     * EXPECTED TIME COMPLEXITY: O(n), where n is the number of words in the file;
      */
     public Iterator<String> iterator()
     {
@@ -68,10 +68,10 @@ public class StopList implements Iterable<String>
 
 
     /** 
-     * purpose: Check whether a word is a stopword
-     * input: String wordToCheck, the word that we are checking 
-     * result: true if the word is a stopword, false if the word is not
-     * expected time complexity: O(1), HashSet 'contains()' is constant
+     * PURPOSE: Check whether a word is a stopword;
+     * INPUT: String wordToCheck, the word that we are checking;
+     * RESULT: true if the word is a stopword, false if the word is not;
+     * EXPECTED TIME COMPLEXITY: O(1), HashSet 'contains()' is constant;
      */
     public Boolean isAStopWord(String wordToCheck)
     {
@@ -80,10 +80,10 @@ public class StopList implements Iterable<String>
 
 
     /**
-     * purpose: display the words in the stoplist
-     * input: none
-     * result: the stoplist's contents are written to stdout
-     * expected time complexity: O(n), where n is the number of words in stopWords
+     * PURPOSE: display the words in the stoplist;
+     * INPUT: none;
+     * RESULT: the stoplist's contents are written to stdout;
+     * EXPECTED TIME COMPLEXITY: O(n), where n is the number of words in stopWords;
      */
     public void display()
     {
