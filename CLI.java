@@ -32,13 +32,12 @@ public class CLI
     
 
     /**
-     * purpose: use a Buffered Reader to read inputs from stdin
-     *
-     * input: none
-     *
-     * result: the attribute 'entry' is set to equal the input from the command line
-     *
-     * expected time complexity: O(1)
+     * <pre>
+     * PURPOSE: use a Buffered Reader to read inputs from stdin;
+     * INPUT: none;
+     * RESULT: the attribute 'entry' is set to equal the input from the command line;
+     * EXPECTED TIME COMPLEXITY: O(1)
+     * </pre>
      */
     public void BuffRead()
     {
