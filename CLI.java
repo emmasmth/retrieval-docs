@@ -80,10 +80,10 @@ public class CLI
 
 
     /**
-     * purpose: print an error message and the program's command line options
-     * input: none
-     * result: the instructions are printed to stdout
-     * expected time complexity: O(1)
+     * PURPOSE: print an error message and the program's command line options;
+     * INPUT: none;
+     * RESULT: the instructions are printed to stdout;
+     * EXPECTED TIME COMPLEXITY: O(1);
      */
     private void usage()
     {
@@ -93,10 +93,10 @@ public class CLI
     
 
     /**
-     * purpose: process the user's command
-     * input: the command arguments
-     * result: create the relevant SearchEngine
-     * expected time complexity: O(n^2)
+     * PURPOSE: process the user's command;
+     * INPUT: the command arguments;
+     * RESULT: create the relevant SearchEngine;
+     * EXPECTED TIME COMPLEXITY: O(n^2);
      */
     private void processCommand(String [] args)
     {
@@ -127,10 +127,10 @@ public class CLI
 
 
     /** 
-     * purpose: process entered queries from stdin
-     * input: the command arguments
-     * result: the relevant Set<Document> is returned and displayed to stdout
-     * expected time complexity: O(n) for each query, O(n^2) for entire method where n is the number of queries
+     * PURPOSE: process entered queries from stdin;
+     * INPUT: the command arguments;
+     * RESULT: the relevant Set<Document> is returned and displayed to stdout;
+     * EXPECTED TIME COMPLEXITY: O(n) for each query, O(n^2) for entire method where n is the number of queries;
      */ 
     public void processQueries(String [] args)
     {
